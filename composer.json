@@ -1,0 +1,37 @@
+{
+    "name": "yousef/laravel-cart",
+    "description": "A driver-based cart package for Laravel with session and database support.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yousef\\Cart\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yousef\\Cart\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/database": "^10.0|^11.0",
+        "illuminate/session": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.0",
+        "orchestra/testbench": "^8.0|^9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yousef\\Cart\\CartServiceProvider"
+            ],
+            "aliases": {
+                "Cart": "Yousef\\Cart\\Cart"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
